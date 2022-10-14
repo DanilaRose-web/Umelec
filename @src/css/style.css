@@ -1,0 +1,143 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+a:hover, a:focus, a:active, a {
+    text-decoration: none;  
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body.overflow {
+    overflow: hidden;
+}
+
+a:focus, a:active, a:hover, button, button:active, button:focus, button:hover, input, input:focus, input:active, input:hover {
+    border: none;
+    outline: none;
+    text-decoration: none;   
+}
+
+button, input {
+    padding: 0;
+}
+
+.container-fluid {
+    max-width: 1200px;
+}
+
+.fullpage {
+    max-width: 1920px;
+    height: 100%;
+    position: relative;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.fullpage.hide {
+    -webkit-transform: translateX(-400px);
+    transform: translateX(-400px);
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+
+
+
+
+/* Стили по мелочевке, но данные элементы встерчаются часто */
+
+.breadcrumbs {
+    margin-bottom: 30px;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.breadcrumbs a, .breadcrumbs span {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    transition: all 0.1s ease;
+    color: #ecf6fc;
+}
+
+.breadcrumbs a {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs svg {
+    margin: 0 15px;
+    width: 13px;
+    height: 13px;
+    fill: #ecf6fc;
+}
+
+.breadcrumbs a:hover span {
+    color: #09b28a;
+}
+
+
+
+
+
+/* стрелка скролла вверх */
+.arrow-up {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 50%;
+    border: 1px solid #09b28a;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    z-index: 10;
+}
+
+.arrow-up svg {
+    fill: #09b28a;
+    width: 30px;
+    height: 30px;
+}
+
+.arrow-up:hover {
+    background: #f3c600;
+}
+
+.arrow-up.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.section-price .footable_parent {
+    overflow-x: initial;
+ }
+ 
+ .wp-block-columns {
+    margin-bottom: 0;
+ }
+
+@media all and (max-width: 600px) {
+    .semantic_ui .ui.table tr td { font-size: calc((100vw - 280px)/(600 - 280) * (16 - 13) + 13px); }
+}

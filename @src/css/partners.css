@@ -1,0 +1,34 @@
+/* SECTION Partners */
+.partners {
+   padding: 110px 0;
+   background: #ecf6fc;
+}
+
+.partners-title {
+   margin: 0 auto 30px auto;
+   text-align: center;
+   font-weight: 700;
+   color: #233341;
+   font-size: 53px;
+   line-height: 105%;
+   letter-spacing: -1px;
+}
+
+.partner-img {
+   margin: 0 10px;
+}
+
+.partner-img img {
+   max-width: 100%;
+   height: auto;
+   filter: grayscale(100);
+   transition: all 0.2s ease;
+}
+
+.partner-img:hover img {
+   filter: grayscale(0);
+}
+
+@media all and (max-width: 640px) {
+   .partners-title { font-size: calc((100vw - 280px)/ (640 - 280) * (53 - 33) + 33px); }
+}

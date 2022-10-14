@@ -1,0 +1,111 @@
+.facts {
+   padding-bottom: 110px;
+}
+
+.facts-title {
+   margin: 0 auto 30px auto;
+   text-align: center;
+   font-weight: 700;
+   color: #233341;
+   font-size: 53px;
+   line-height: 105%;
+   letter-spacing: -1px;
+}
+
+.facts-subtitle {
+   margin: 0 auto;
+   text-align: center;
+   font-weight: 400;
+   color: #233341;
+   font-size: 18px;
+   line-height: 1.5;
+}
+
+.facts-subtitle strong {
+   font-weight: 700;
+}
+
+@media all and (max-width: 640px) {
+   .facts-title { font-size: calc((100vw - 280px)/(640 - 280) * (53 - 33) + 33px); }
+}
+
+@media all and (max-width: 400px) {
+   .facts-subtitle { font-size: calc((100vw - 280px)/(400 - 280) * (18 - 16) + 16px); }
+}
+
+
+/* счетчик */
+.counter-wrap {
+   margin-top: 60px;
+   padding: 45px 0;
+   background: #09b28a;
+   border-radius: 10px;
+}
+
+.counter-row {
+   text-decoration: none;
+}
+
+.counter-col {
+   margin-bottom: 30px;
+   display: flex;
+   /* align-items: center; */
+}
+
+.counter-item {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.counter-col:not(:last-child) {
+   border-right: 1px solid #DAE0E3;
+   border-image: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(196, 196, 196, 0.5106) 15.63%, #C4C4C4 48.96%, rgba(196, 196, 196, 0.4592) 84.9%, rgba(196, 196, 196, 0) 100%);
+   border-image-slice: 1;
+}
+
+.counter-img {
+   margin-bottom: 15px;
+   max-width: 80px;
+   flex: 1 1 auto;
+}
+
+.counter-img img {
+   max-width: 100%;
+   height: auto;
+}
+
+.counter-title {
+   margin-bottom: 15px;
+   text-align: center;
+   font-weight: 700;
+   color: #ffffff;
+   font-size: 20px;
+   line-height: 1.4;
+   flex: 1 1 auto;
+}
+
+.counter-number {
+   font-weight: 700;
+   color: #233341;
+   font-size: 70px;
+   line-height: 1.2;
+   opacity: 0;
+   transition: all 0.2s ease;
+}
+
+@media all and (max-width: 1200px) {
+   .counter-number { font-size: calc((100vw - 992px)/(1200 - 992) * (70 - 56) + 56px); }
+}
+@media all and (max-width: 992px) {
+   .counter-number { font-size: calc((100vw - 768px)/(992 - 768) * (70 - 56) + 56px); }
+}
+@media all and (max-width: 576px) {
+   .counter-number { font-size: calc((100vw - 280px)/(576 - 280) * (70 - 56) + 56px); }
+   .counter-col { padding-bottom: 20px; }
+   .counter-col:not(:last-child) { 
+       border-bottom: 1px solid #DAE0E3;
+       border-image: linear-gradient(90deg, rgba(196, 196, 196, 0) 0%, rgba(196, 196, 196, 0.5106) 15.63%, #C4C4C4 48.96%, rgba(196, 196, 196, 0.4592) 84.9%, rgba(196, 196, 196, 0) 100%);
+       border-image-slice: 1; }
+}

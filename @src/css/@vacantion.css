@@ -1,0 +1,109 @@
+.vacantion {
+   padding: 110px 0;
+   background: url('../img/dist/index/bg-main.webp') no-repeat center;
+   background-size: cover;
+}
+
+.vacantion-title {
+   margin: 0 auto;
+   margin-bottom: 60px;
+   text-align: center;
+   margin-bottom: 30px;
+   font-weight: 700;
+   color: #ecf6fc;
+   font-size: 49px;
+   line-height: 110%;
+   letter-spacing: -1px;
+}
+
+.vacantion-form-title {
+   margin-bottom: 30px;
+   color: #f3c600;
+   font-size: 20px;
+   font-weight: 700;
+   text-align: center;
+   line-height: 20px;
+}
+
+.form-col {
+   display: flex;
+   justify-content: center;
+}
+
+.vacantion-block {
+   width: 100%;
+}
+
+.form-item {
+   margin-bottom: 30px;
+}
+
+.vacantion-item {
+   min-height: 94px;
+}
+
+.form-item.flex {
+   display: flex;
+   align-items: center;
+}
+
+#checkbox {
+   width: 20px;
+   height: 20px;
+}
+ 
+.label {
+   margin-bottom: 10px;
+   font-weight: 500;
+   color: #ecf6fc;
+   font-size: 16px;
+   display: inline-block;
+   cursor: pointer;
+}
+
+.label.mb-0 {
+   margin-bottom: 0;
+}
+
+.ta-btn {
+   margin: 0 auto;
+}
+
+/* чекбокс от ContactForm 7 */
+span.wpcf7-list-item {
+   margin: 0;
+}
+
+span.wpcf7-list-item-label {
+   margin-left: 10px;
+   font-weight: 500;
+   color: #ecf6fc;
+   font-size: 16px;
+   display: inline-block;
+   cursor: pointer;
+}
+
+input[type=checkbox] {
+   width: 20px;
+   height: 20px;
+}
+
+span.policy label {
+   display: flex;
+   align-items: center;
+}
+
+@media all and (max-width: 740px) {
+   .vacantion-title { font-size: calc((100vw - 280px)/(740 - 280) * (49 - 33) + 33px); }
+   .label { font-size: 14px; }
+   .form-item { margin-bottom: 20px; }
+}
+
+@media all and (max-width: 550px) {
+   .vacantion-form-title { font-size: calc((100vw - 280px)/(550 - 280) * (20 - 16) + 16px); }
+}
+
+@media all and (max-width: 450px) {
+   .vacantion { padding: 60px 0; }
+   .submit.w100 { max-width: 100%; width: 100%; }
+}

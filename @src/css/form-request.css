@@ -1,0 +1,158 @@
+.form-req {
+   padding-top: 110px;
+   padding-bottom: 110px;
+   background: url('../img/dist/index/bg-main.webp'), no-repeat center;
+   background-size: cover;
+}
+
+.form-req-title {
+   margin: 0 auto;
+   margin-bottom: 20px;
+   text-align: center;
+   font-weight: 700;
+   color: #ecf6fc;
+   font-size: 49px;
+   line-height: 100%;
+}
+
+.form-req-subtitle, .form-title {
+   text-align: center;
+   margin: 0 auto;
+   font-weight: 400;
+   color: #ecf6fc;
+   font-size: 18px;
+   line-height: 1.2;
+}
+
+.form-req-subtitle {
+   margin-bottom: 15px;
+}
+
+.form-title {
+   margin-bottom: 30px;
+   color: #f3c600;
+   font-size: 20px;
+   font-weight: 700;
+}
+
+.form-request, .form-modal-request {
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.input {
+   padding: 0 18px;
+   display: flex;
+   align-items: center;
+   max-width: 500px;
+   width: 100%;
+   min-height: 50px;
+   color: #192835;
+   border: none;
+   border-radius: 6px;
+   font-size: 14px;
+   font-weight: 570;
+   border: none;
+}
+
+.input.w100 {
+   max-width: 100%;
+}
+
+.input.error {
+   border: 1px solid red;
+   color: red;
+   box-shadow: 0 0 15px red;
+}
+
+.input.success {
+   border: 1px solid green;
+   color: green;
+   box-shadow: 0 0 15px green;
+}
+
+.submit {
+   margin-left: 20px;
+   font-size: 18px;
+   font-weight: 800;
+   color: #233341;
+   background-color: #f3c600;
+   box-shadow: 0px 8px 8px rgba(14,29,42,0.4);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   max-width: 200px;
+   width: 100%;
+   height: 50px;
+   border-radius: 6px;
+   transition: all 0.2s ease;
+}
+
+.submit.mb {
+   margin-bottom: 20px;
+   margin-left: 0;
+}
+
+.submit:hover {
+   background: #09b28a;
+   color: #ecf6fc;
+}
+
+.wpcf7-form.init p, .wpcf7-form.sent p, .wpcf7-form.invalid p {
+   display: flex;
+   justify-content: center;
+}
+
+form[action="/vacancies/#wpcf7-f213-o1"].wpcf7-form.init p, 
+form[action="/vacancies/#wpcf7-f213-o1"].wpcf7-form.sent p, 
+form[action="/vacancies/#wpcf7-f213-o1"].wpcf7-form.invalid p {
+   display: flex;
+   justify-content: flex-start;
+}
+
+.wpcf7 form .wpcf7-response-output {
+   margin: 10px auto 10px auto;
+   padding: 0;
+   border: 2px solid #00a0d2;
+   max-width: 630px;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
+   color: #f3c600;
+   border: none;
+}
+
+.wpcf7-not-valid-tip {
+   color: red;
+   font-size: 13px;
+   font-weight: normal;
+   display: block;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 500;
+   margin-top: 5px;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output {
+   color: red;
+}
+
+
+
+@media all and (max-width: 640px) {
+   .form-req-title { font-size: calc((100vw - 280px)/(640 - 280) * (49 - 33) + 33px); }
+}
+
+@media all and (max-width: 570px) {
+   .wpcf7-form.init p, .wpcf7-form.sent p, .wpcf7-form.invalid p, .form-request { flex-direction: column; align-items: center; }
+   .form-req-btn { margin-left: 0; max-width: 100%; width: 100%; }
+   .wpcf7-form-control-wrap, .input { max-width: 100%; width: 100%; }
+}
+
+@media all and (max-width: 531px) {
+   .form-req-title { margin-bottom: 30px; }
+}
+
+@media all and (max-width: 400px) {
+   .form-req-subtitle { font-size: calc((100vw - 280px)/(400 - 280) * (18 - 16) + 16px); }
+}
